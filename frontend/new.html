@@ -1,0 +1,21 @@
+
+<section ng-controller='DestinationsController as destinations' ui-view>
+
+    <form ng-submit="destinations.addDestination()">
+      <div>
+        <label for="newDestination-city_name"> City Name: </label>
+        <input type="text" ng-model="destinations.newDestination.city_name" placeholder="Rome">
+      </div>
+
+      <div>
+        <label for="newDestination-country_name"> Country Name: </label>
+        <input type="text" ng-model="destinations.newDestination.country_name" placeholder="Italy">
+      </div>
+
+      <div>
+        <input  type="submit" value="Add Destination">
+      </div>
+    </form>
+  </main>
+
+</section>

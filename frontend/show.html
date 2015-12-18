@@ -1,0 +1,8 @@
+<section ng-controller='DestinationsController as destinations' ui-view >
+    <li ng-repeat="destination in destinations.all" data-id="{{destination._id}}">
+      <p> <strong> City Name: </strong>  {{destination.city_name}} </p>
+      <p> <strong> Country Name: </strong> {{destination.country_name}} </p>
+      <button ng-click="destinations.deleteDestination(destination)">X</button>
+    </li>
+  </ul>
+</section>
